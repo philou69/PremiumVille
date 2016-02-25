@@ -2,10 +2,21 @@
 /* On fixe la taille du chazmp de recherche pour qu'il ne s'etalle pas sur les smartphone*/
 .inline-form input {
 	display: inline-block;
-	width:70px;
+	width:100px;
 }
 
 /* On mets un padding pour que la navbar ne cache pas les premiers textes */
 body{
 padding-top: 82px;
+}
+
+
+/* Paramettrage des images */
+img{
+	width: 100%;
+}
+
+/* On modifier les jumbotrons */
+.jumbotron {
+	padding: 20px;
 }
