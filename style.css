@@ -4,3 +4,8 @@
 	display: inline-block;
 	width:100px;
 }
+
+/* On mets un padding pour que la navbar ne cache pas les premiers textes */
+body{
+padding-top: 82px;
+}
