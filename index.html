@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	   
+		<link rel="stylesheet" type="text/css" href="style.css">
+	    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+	    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css" rel="stylesheet">
+	    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+		<title>Acceuil</title>
+	</head>
+	<body>
+
+	<!-- Création de la navbar -->
+		<header>
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<h1 class="navbar-brand">PremiumVille</h1>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-nav">
+							<li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Acceuil</a></li>
+							<li><a href="plusInfo.html">Plus d'info</a></li>
+							<li><a href="activiteMois">Activité du mois</a></li>
+							<li>
+								<form class="navbar-form inline-form">
+									<div class="form-group">
+										<input type="search" class="input-sm form-control" placeholder="Recherche">
+										<button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-search"></span>Recherche</button>
+									</div>
+								</form>
+							</li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+
+		<!-- jQuery -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	    <!-- Javascript de Bootstrap -->
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+	    <script>
+	      // Scrollspy fluide
+	      $(function () {
+	        $('header a').on('click', function(e) {
+	          e.preventDefault();
+	          var hash = this.hash;
+	          $('html, body').animate({
+	            scrollTop: $(this.hash).offset().top
+	          }, 1000, function(){
+	            window.location.hash = hash;
+	          });
+	        });
+	      });
+	    </script>
+	</body>
+</html>
