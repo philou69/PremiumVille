@@ -10,6 +10,11 @@
 	    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css" rel="stylesheet">
 	    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 		<title>Plus d'infos</title>
+
+		<!-- jQuery -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	    <!-- Javascript de Bootstrap -->
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	</head>
 	<body>
 
@@ -47,25 +52,34 @@
 			</nav>
 		</header>
 
-
-		<!-- jQuery -->
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	    <!-- Javascript de Bootstrap -->
-	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<!--
-	    <script>
-	      // Scrollspy fluide
-	      $(function () {
-	        $('header a').on('click', function(e) {
-	          e.preventDefault();
-	          var hash = this.hash;
-	          $('html, body').animate({
-	            scrollTop: $(this.hash).offset().top
-	          }, 1000, function(){
-	            window.location.hash = hash;
-	          });
-	        });
-	      });
-	    </script> -->
+	<!-- Contenue de la pge infos -->
+	    <section class="container-fluid">
+	    	<div class="jumbotron row">
+	    		<div class="col-md-4 moitie">
+					<div id="carouselMusee" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target='#carouselMusee' data-slide-to="0" class="active"></li>
+							<li data-target='#carouselMusee' data-slide-to="1"></li>
+							<li data-target='#carouselMusee' data-slide-to="2"></li>
+							<li data-target='#carouselMusee' data-slide-to="3"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="item active"><img src="images/musee.jpg"></div>
+							<div class="item "><img class="carouselImg" src="images/egypte.jpg"></div>
+							<div class="item "><img class="carouselImg" src="images/dino.jpg"></div>
+							<div class="item "><img class="carouselImg" src="images/interieurMusee.jpg"></div>
+						</div>
+					</div>
+	    		</div>
+	    		<div  class="col-md-8 moitie">
+	    			<h2>Le musée d'histoire naturel</h2>
+	    			<p>Le musée vous acceuil pour vous diffulger tout les secret de la vie et de l'histoire.<br/>
+					Vous pourrez découvrire l'histoire de l'Egypte ancienne, observe de véritables squellettes de dinosaures et plein d'autres choses.<br/>
+					Le parcours du musée est aussi bien prévue pour les enfants que pour les parents.<br/>
+					<a href="activiteMois.html#musee">Reservez</a> des places
+	    			</p>
+	    		</div>
+	    	</div>
+	    </section>
 	</body>
 </html>

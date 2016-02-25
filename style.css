@@ -20,3 +20,8 @@ img{
 .jumbotron {
 	padding: 20px;
 }
+
+/* On partage en duex le jumbotron pour eviter lemouvement de texte en fonction de la huteur des photos*/
+.moitie {
+	height: 50%;
+}
