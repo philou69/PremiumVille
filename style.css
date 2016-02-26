@@ -25,3 +25,10 @@ img{
 .moitie {
 	height: 50%;
 }
+/* On modifie la ligne au survol */
+tr:hover{
+	background-color: lightblue;
+}
+.table {
+	background-color: white;
+}

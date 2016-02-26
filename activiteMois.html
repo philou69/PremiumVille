@@ -10,6 +10,10 @@
 	    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css" rel="stylesheet">
 	    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 		<title>Activité du mois</title>
+		<!-- jQuery -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	    <!-- Javascript de Bootstrap -->
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	</head>
 	<body>
 
@@ -57,25 +61,297 @@
 			</nav>
 		</header>
 
-
-		<!-- jQuery -->
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	    <!-- Javascript de Bootstrap -->
-	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<!--
-	    <script>
-	      // Scrollspy fluide
-	      $(function () {
-	        $('header a').on('click', function(e) {
-	          e.preventDefault();
-	          var hash = this.hash;
-	          $('html, body').animate({
-	            scrollTop: $(this.hash).offset().top
-	          }, 1000, function(){
-	            window.location.hash = hash;
-	          });
-	        });
-	      });
-	    </script> -->
+<!-- Création du tableau des activités
+les colonnes dates et description ont deux affichages smartphones et autres -->
+		<section class="container-fluid">
+			<div class="jumbotron table-responsive">
+				<table class="table  table-condensed ">
+					<caption>
+						<h4 class="text-center">Les activés du mois</h4>
+					</caption>
+					<thead>
+						<tr>
+							<th>Activité</th>
+							<th>Date</th>
+							<th >Description</th>
+							<th>Inscription</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="info">
+							<td id="museum" colspan="4" class="text-center">Muséum d'histoire naturel </td>
+						</tr>
+						<tr>
+							<td>Visite libre</td>
+							<td class="hidden-xs"> Du lundi au samedi de 9h30 à 17h</td>
+							<td class="visible-xs"> L au S <br/>9h30 à 17h</td>
+							<td class="hidden-xs">Visite libre du musée. Possibilite de visite audio.</td>
+							<th class="visible-xs">Visite libre</th>
+							<td>
+								<div class="btn-group">	
+									<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Inscription <span class="caret"></span></button>
+										<ul class="dropdown-menu">
+											<li><a href="#">Seul</a></li>
+											<li><a href="#">Accompagné</a></li>
+										</ul>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Circuit enfant</td>
+							<td class="hidden-xs">Les mercredi et samedi à 9h30</td>
+							<td class="visible-xs"> Me, S 9h30</td>
+							<td class="hidden-xs">Visite guidés du musée pour les enfants de 3 à 15 ans.</td>
+							<td class="visible-xs">Visite pour enfants </td>
+							<td>
+								<div class="btn-group">	
+									<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Inscription <span class="caret"></span></button>
+										<ul class="dropdown-menu">
+											<li><a href="#">Seul</a></li>
+											<li><a href="#">Accompagné</a></li>
+										</ul>
+								</div>
+							</td>
+						</tr>
+						<tr class="info">
+							<td  id="danse" colspan="4" class="text-center">Ecole de danse</td>
+						</tr>
+						<tr>
+							<td>Valse</td>
+							<td class="hidden-xs">les lundi à 17h</td>
+							<td class="visible-xs">L 17h</td>
+							<td class="hidden-xs">Cours de valse pour tout niveau.</td>
+							<td class="visible-xs">Cours de valse</td>
+							<td>
+								<div class="btn-group">	
+									<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Inscription <span class="caret"></span></button>
+										<ul class="dropdown-menu">
+											<li><a href="#">Seul</a></li>
+											<li><a href="#">Accompagné</a></li>
+										</ul>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Tango</td>
+							<td class="hidden-xs">les mardi à 17h</td>
+							<td class="visible-xs">Ma </td>
+							<td class="hidden-xs">Cours de tango pour tout niveau.</td>
+							<td class="visible-xs">Cours de tango</td>
+							<td>
+								<div class="btn-group">	
+									<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Inscription <span class="caret"></span></button>
+										<ul class="dropdown-menu">
+											<li><a href="#">Seul</a></li>
+											<li><a href="#">Accompagné</a></li>
+										</ul>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Salsa</td>
+							<td class="hidden-xs">les mercredi à 17h</td>
+							<td class="vissible-xs"> Me 17h</td>
+							<td class="hidden-xs">Cours de salsa pour tout niveau.</td>
+							<td class="vissible-xs">Cours de salsa</td>
+							<td>
+								<div class="btn-group">
+									<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Inscription <span class="caret"></span></button>
+										<ul class="dropdown-menu">
+											<li><a href="#">Seul</a></li>
+											<li><a href="#">Accompagné</a></li>
+										</ul>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Rock</td>
+							<td class="hidden-xs">les jeudi à 17h</td>
+							<td class="visible-xs">J 17h</td>
+							<td class="hidden-xs">Cours de rock pour tout niveau.</td>
+							<td class="visible-xs">Cours de rock</td>
+							<td>
+								<div class="btn-group">	
+									<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Inscription <span class="caret"></span></button>
+										<ul class="dropdown-menu">
+											<li><a href="#">Seul</a></li>
+											<li><a href="#">Accompagné</a></li>
+										</ul>
+								</div>
+							</td>
+						</tr>
+						<tr class="danger">
+							<td>Hip-hop</td>
+							<td colspan="4" class="text-center" >Annulé</td>
+						</tr>
+						<tr id="theatre" class="info">
+							<td colspan="5" class="text-center">Théâtre municipal</td>
+						</tr>
+						<tr>
+							<td>Le médecin malgré lui</td>
+							<td class="hidden-xs">Les jeudi à 20h30</td>
+							<td class="visible-xs">J 20h30</td>
+							<td class="hidden-xs">Interprétation libre d'une des plus grandes oeuvres de Molière</td>
+							<td class="visible-xs"> Piéce de théâtre</td>
+							<td>
+								<div class="btn-group">
+									<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Inscription <span class="caret"></span></button>
+									<ul class="dropdown-menu">
+										<li><a href="#">Seul</a></li>
+										<li><a href="#">Accompagné</a></li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Jean BOM</td>
+							<td class="hidden-xs">Samedi 15 à 20h30</td>
+							<td class="visible-xs">Le 15 20h30</td>
+							<td class="hidden-xs">Spectacle humoristique de Jean BOM</td>
+							<td class="visible-xs">Spectale</td>
+							<td>
+								<div class="btn-group">
+									<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Inscription <span class="caret"></span></button>
+									<ul class="dropdown-menu"> 
+										<li><a href="#">Seul</a></li>
+										<li><a href="#">Accompagné</a></li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+						<tr id="parc" class="info">
+							<td colspan="5" class="text-center">Parc municipal</td>
+						</tr>
+						<tr>
+							<td>Visite libre</td>
+							<td class="hidden-xs">Tout les jours de 8h à 19h30</td>
+							<td class="visible-xs">TLJ 8h à 19h30</td>
+							<td class="hidden-xs">Accés libre au parc. Les piques-niques 
+							sont interdit</td>
+							<td class="visible-xs">Accés libre au parc</td>
+							<td>
+								<div class="btn-group">
+									<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Inscription <span class="caret"></span></button>
+									<ul class="dropdown-menu">
+										<li><a href="#">Seul</a></li>
+										<li><a href="#">Accompagné</a></li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Visite des serres</td>
+							<td class="hidden-xs">Du lundi au vendredi 14h30 samedi 9h30 et 14h30</td>
+							<td class="visible-xs">L au V 14h30<br/>
+							S 9h30, 14h30 </td>
+							<td class="hidden-xs">Visite guidés par un jardinnier du parc. Découverte des especes les plus rares</td>
+							<td class="visible-xs">Découverte des serres</td>
+							<td>
+								<div class="btn-group">
+									<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Inscription <span class="caret"></span></button>
+									<ul class="dropdown-menu">
+										<li><a href="#">Seul</a></li>
+										<li><a href="#">Accompagné</a></li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Marathon</td>
+							<td class="hidden-xs">Dimanche 23 à 10h</td>
+							<td class="visible-xs">Le 23 10h</td>
+							<td class="hidden-xs">Marathon de 20 km. Repas offert aux participants</td>
+							<td class="visible-xs">Marathon de 20 km</td>
+							<td>
+								<div class="btn-group">
+									<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Inscription <span class="caret"></span></button>
+									<ul class="dropdown-menu">
+										<li><a href="#">Seul</a></li>
+										<li><a href="#">Accompagné</a></li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+						<tr id="echec" class="info">
+							<td colspan="5" class="text-center">Club d"échec</td>
+						</tr>
+						<tr>
+							<td>Cours ignitiation</td>
+							<td class="hidden-xs">Du lundi au vendredi à 9h30</td>
+							<td class="visible-xs">L au V 9h30</td>
+							<td class="hidden-xs">Venez découvir les echec et faire votre premiere partie</td>
+							<td class="visible-xs"> Ignitiation aux echecs</td>
+							<td>
+								<div class="btn-group">
+									<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Inscription <span class="caret"></span></button>
+									<ul class="dropdown-menu">
+										<li><a href="#">Seul</a></li>
+										<li><a href="#">Accompagné</a></li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Cours amateur</td>
+							<td class="hidden-xs">Du lundi au vendredi à 13h</td>
+							<td class="visible-xs">L au V 13h</td>
+							<td class="hidden-xs">Ce cours permet d'approfondir ses connaissances en echec</td>
+							<td class="visible-xs">Cours pour amateurs</td>
+							<td>
+								<div class="btn-group">
+									<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Inscription <span class="caret"></span></button>
+									<ul class="dropdown-menu">
+										<li><a href="#">Seul</a></li>
+										<li><a href="#">Accompagné</a></li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Cours expert</td>
+							<td class="hidden-xs">Les samedi à 9h</td>
+							<td class="visible-xs">S 9h</td>
+							<td class="hidden-xs">Cours de perfectionnement à l'art des echec
+							</td>
+							<td class="visible-xs">Cours de perfectionnement</td>
+							<td>
+								<div class="btn-group">
+									<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Inscription <span class="caret"></span></button>
+									<ul class="dropdown-menu">
+										<li><a href="#">Seul</a></li>
+										<li><a href="#">Accompagné</a></li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+						<tr id="stade" class="info">
+							<td colspan="5" class="text-center">Stade de football</td>							
+						</tr>
+						<tr>
+							<td>Acces libre</td>
+							<td class="hidden-xs">Tous les jours de 9h à 22h</td>
+							<td class="visible-xs">TLJ 9h à 22h</td>
+							<td class="hidden-xs">Vous pouvez faire une course, organiser une partie de foot avec des amis...</td>
+							<td class="visible-xs">Accés libre au stade</td>
+							<td>
+								<div class="btn-group">
+									<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Inscription <span class="caret"></span></button>
+									<ul class="dropdown-menu">
+										<li><a href="#">Seul</a></li>
+										<li><a href="#">Accompagné</a></li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+						<tr class="danger">
+							<td>Match de foot</td>
+							<td colspan="4">Aucuns matchs ce mois </td>
+						</tr>
+					</tbody>
+				</table>
+			</div>	
+		</section>
+		
+		
 	</body>
 </html>
