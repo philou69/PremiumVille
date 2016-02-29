@@ -10,6 +10,10 @@
 	    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css" rel="stylesheet">
 	    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 		<title>Espace Menbre</title>
+		<!-- jQuery -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	    <!-- Javascript de Bootstrap -->
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	</head>
 	<body>
 
@@ -56,26 +60,33 @@
 				</div>
 			</nav>
 		</header>
-
-
-		<!-- jQuery -->
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	    <!-- Javascript de Bootstrap -->
-	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<!--
-	    <script>
-	      // Scrollspy fluide
-	      $(function () {
-	        $('header a').on('click', function(e) {
-	          e.preventDefault();
-	          var hash = this.hash;
-	          $('html, body').animate({
-	            scrollTop: $(this.hash).offset().top
-	          }, 1000, function(){
-	            window.location.hash = hash;
-	          });
-	        });
-	      });
-	    </script> -->
+		<section class="container">
+			<div class="jumbotron row">
+				<form class="form-horizontal col-xs-6 col-xs-push-3">
+					<div class="form-group">
+						<legend class="text-center">Accés à l"espace membre</legend>
+					</div>
+					<div class="row">
+						<div class="form-group">
+							<label for="login" class="col-xs-6 control-label">Login</label>
+							<div class="col-xs-6">
+								<input type="text" class="form-control" name="login" id="login">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group">
+							<label for="motDePasse" class="col-xs-6 control-label">Mot de passe</label>
+							<div class="col-xs-6">
+								<input type="password" class="form-control" name="motDePasse" id="motDePasse">
+							</div>
+						</div>
+					</div>
+					<div class="row text-center">
+						<button class="btn btn-default" type="submit">Connection</button>
+					</div>
+				</form>
+			</div>
+		</section>
 	</body>
 </html>

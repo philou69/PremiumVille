@@ -69,43 +69,85 @@
 						<legend class="text-center">Si vous voulez nous laisser un message</legend>
 					</div>
 					<!-- Zone personne -->
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="nom" class="col-xs-6 col-md-6 control-label">Nom :</label>
-									<div class="col-xs-6 col-md-6 ">
-										<input type="text" class="form-control" name="nom" id="nom">
-									</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="nom" class="col-xs-6 col-md-6 control-label">Nom :</label>
+								<div class="col-xs-6 col-md-6 ">
+									<input type="text" class="form-control" name="nom" id="nom">
 								</div>
 							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="prenom" class="col-xs-6 col-md-6 control-label">Prénom :</label>
-									<div class="col-xs-6 col-md-3">
-										<input type="text" class="form-control" name="prenom" id="prenom">
-									</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="prenom" class="col-xs-6 col-md-6 control-label">Prénom :</label>
+								<div class="col-xs-6 col-md-3">
+									<input type="text" class="form-control" name="prenom" id="prenom">
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="dateNaissance" class="col-xs-6 col-md-6 control-label"> Date de naissance:</label>
+								<div class="col-xs-6 col-md-6">
+									<input type="date" class="form-control" name="dateNaissance" id="dateNaissance">
+									<span class="help-block"> Format : JJ/MM/AAAA</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="email" class="col-xs-6 col-md-6 control-label" >Email :</label>
+								<div class="col-xs-6 col-md-6">
+									<input type="email" class="form-control" name="email" id="email"> 
+								</div>
+							</div>
+						</div>
+					</div>	
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group "> 
+								<label for="resident" class="col-xs-6 col-md-6 control-label">Résident de la ville :</label>
+								<div class="checkbox">
+										<input type="checkbox" class="col-xs-6 col-md-6 form-contol "  name="resident" id="resident">
+								</div>		
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="nationnalite" class="col-xs-6 col-md-6 control-label">Nationnalité :</label>
+								<div class="col-xs-6 col-md-6">
+									<select id="nationnalite" class="form-control" name="nationalite">
+										<option value="francaise">Française</option>
+										<option value="americaine">Américaine</option>
+										<option value="anglaise">Anglaise</option>
+										<option value="italien">Italien</option>
+									</select>
 								</div>
 							</div>	
 						</div>
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="dateNaissance" class="col-xs-6 col-md-6 control-label"> Date de naissance:</label>
-									<div class="col-xs-6 col-md-6">
-										<input type="date" class="form-control" name="dateNaissance" id="dateNaissance">
-										<span class="help-block"> Format : JJ/MM/AAAA</span>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="email" class="col-xs-6 col-md-6 control-label" >Email :</label>
-									<div class="col-xs-6 col-md-6">
-										<input type="email" class="form-control" name="email" id="email"> 
-									</div>
+					</div>
+					<div class="row">
+						<div class="form-group">
+							<label for="titre" class="col-xs-6 col-md-3 control-label">Titre :</label>
+							<div class="col-xs-6 col-md-6">
+								<input type="text" class="form-control" name="titre" id="titre">
 							</div>
 						</div>
+					</div>	
+					<div class="row">
+						<div class="form-group">
+							<label for="message" class="col-md-3 control-label">Votre message :</label>
+							<div class="col-md-6">
+								<textarea class="form-control" name="message" id="message"rows="4"></textarea>
+							</div>
+						</div>	
 					</div>
+					<div class="row text-center">
+						<button class="btn btn-default" type="submit">Envoyer</button>
+					</div>	
 				</form>
 			</div>
 		</section>
